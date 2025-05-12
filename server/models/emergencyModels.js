@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const emergencySchema = new mongoose.Schema({
-  decription: {
+  description: {
     type: String,
     required: true,
-  },
-  catagory: {
+},
+  category: {
     type: String,
   },
   status: {

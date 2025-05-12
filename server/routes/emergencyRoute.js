@@ -1,7 +1,7 @@
 const express=require("express")
 const router= express.Router()
 const verifyJWT = require("../middleware/verifyJWT")
-const emergencyController=require("../controllers/notifyController")
+const emergencyController=require("../controllers/emergencyController")
 
 
 router.post("/",emergencyController.createEmergency)

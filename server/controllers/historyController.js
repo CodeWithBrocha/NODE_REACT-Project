@@ -1,6 +1,6 @@
 const historyModels = require("../models/historyModels");
 
-const addCallToHistory= async({user, call, status})=>{
+const addCallToHistory= async({user, call, status},res)=>{
     try {
         await historyModels.create({user, call, status})  
     } catch (error) {
